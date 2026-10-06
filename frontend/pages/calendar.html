@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendario de Tareas</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo">Calendario de Tareas</span>
+        <div class="nav-links">
+            <a href="tasks.html" class="btn-secondary">Registros</a>
+            <button onclick="logout()" class="btn-danger">Cerrar sesión</button>
+        </div>
+    </nav>
+    <main class="full-width">
+        <h1 style="text-align:center; color: var(--ebony);">Calendario</h1>
+        <div id="calendar-view" class="calendar-grid">
+            <!-- Renderizado dinámico vía JS -->
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadCalendar);
+    </script>
+</body>
+</html>

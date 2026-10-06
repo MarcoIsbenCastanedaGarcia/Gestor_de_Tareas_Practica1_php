@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registros de Tareas</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo">Registros de Tareas</span>
+        <div class="nav-links">
+            <a href="calendar.html" class="btn-secondary">Calendario</a>
+            <button onclick="logout()" class="btn-danger">Cerrar sesión</button>
+        </div>
+    </nav>
+    <main class="full-width crud-layout">
+        <div class="form-section">
+            <h3>Nueva Tarea</h3>
+            <form id="taskForm">
+                <label>Nombre Tarea</label>
+                <input type="text" id="tName" required>
+                <label>Descripción Tarea</label>
+                <textarea id="tDesc"></textarea>
+                <label>Materia</label>
+                <input type="text" id="tMat">
+                <label>Fecha de subida</label>
+                <input type="date" id="tDate" required>
+                <div class="btn-group">
+                    <button type="submit" class="btn-primary">Guardar</button>
+                    <button type="reset" class="btn-secondary">Cancelar</button>
+                </div>
+            </form>
+
+            <div class="import-export">
+                <hr>
+                <h4>Importar / Exportar (TXT Json)</h4>
+                <input type="file" id="fileInput" accept=".txt">
+                <button onclick="importTasks()" class="btn-secondary">Importar TXT</button>
+                <button onclick="exportTasks()" class="btn-secondary">Exportar a TXT</button>
+            </div>
+        </div>
+        <div class="table-section">
+            <h3>Tabla de Registros</h3>
+            <table id="tasksTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Materia</th>
+                        <th>Fecha</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

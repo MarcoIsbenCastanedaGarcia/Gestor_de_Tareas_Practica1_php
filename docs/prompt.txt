@@ -1,0 +1,65 @@
+“Hacer un sistema web que tenga incluido un sitio web, con la función de sistema de gestión de tareas con mínimo 4 páginas a contenido o temática libre para cada una. Debe tener un inicio de sesión, apartado de registro y una interfaz principal donde la persona pueda hacer un CRUD de tareas. Así mismo, debe tener un calendario donde puedan visualizarse las tareas”.
+
+Para la parte de sistema web y sitio web toma en cuenta la imagen o imaganes anexadas, La parte del sistema web va a incluir como introducción una pagina principal que lleva a un inicio de sesion el cual va a tener un apartado de usuario (que va a ser el nbombre_apellido del usuario que vamos a crear) y una contraseña, ambos ya preestablecidos, si alguno de los datos está mal o directamente no existe tiene que enviar una alerta de que alguno de los datos está mal, en el caso de que los datos concuerden, tiene que entrar a una parte de gestor de tareas, donde se van a poder hacer registros dentro de una base de datos que vamos a especificar igual en una imgane o imagenes anexadas, a partir de el apartado anterior se va a poder axeder a un apartado de calendario el cual va a registrar las fechas de las tareas registradas
+en la parte de registros de tareas agregar un lector de txt que pueda hacer registros en la tabla especificada, asi mismo que los registros especificados por el usuario se puedan descargar con un txt formato json,
+despues tenemos una parte de sitio web la cual igualmente va a tener como paginal centrar la pagina inical que especificamos al inicio, esta a parte de tener el apartado de inicio de sesion explicado anteriormente va a tener otros apartados como contacto, preguntas frdcuentes y acerca de, las caracteristicas de estos estarán especificadas en las imagenes anexadas. 
+tambien seran anexadas imagenes queseran una representación de la forma en la que queremos que esten las carpetas, que será una captura en visual studio code de un proyecto alterno que usamos como ejemplo, sigue la estructura de las carpetas y de los archivos para crear este poryecto.
+la forma de reaalizar la base de datos va a estar especificada en un mapa de entidad rlación que será anexado, necesito que crees un script para crear la base de datos junto a sus tablas y sus atributos en base al diagramaa entidad relacion. toma en cuenta que usaremos maria db. Evidentemente tiene que estar conectado ek proyecto con la base de datos para que funcione.
+toma en cuenta el tipo de archuvos que se ven en el proyecto alterno de visual que te vamos a mostrar como referencia en una de las capturas anexadas, peor aun asi especifico que utilices html para las paginas, php para la parte del beckend, css para la parte de diseño la paleta de colores especificada 
+/* CSS HEX */
+--periwinkle: #e3d7ffff;
+--soft-periwinkle: #afa2ffff;
+--glaucous: #7a89c2ff;
+--slate-grey: #72788dff;
+--ebony: #636b61ff;
+
+/* CSS HSL */
+--periwinkle: hsla(258, 100%, 92%, 1);
+--soft-periwinkle: hsla(248, 100%, 82%, 1);
+--glaucous: hsla(228, 37%, 62%, 1);
+--slate-grey: hsla(227, 11%, 50%, 1);
+--ebony: hsla(108, 5%, 40%, 1);
+
+/* SCSS HEX */
+$periwinkle: #e3d7ffff;
+$soft-periwinkle: #afa2ffff;
+$glaucous: #7a89c2ff;
+$slate-grey: #72788dff;
+$ebony: #636b61ff;
+
+/* SCSS HSL */
+$periwinkle: hsla(258, 100%, 92%, 1);
+$soft-periwinkle: hsla(248, 100%, 82%, 1);
+$glaucous: hsla(228, 37%, 62%, 1);
+$slate-grey: hsla(227, 11%, 50%, 1);
+$ebony: hsla(108, 5%, 40%, 1);
+
+/* SCSS RGB */
+$periwinkle: rgba(227, 215, 255, 1);
+$soft-periwinkle: rgba(175, 162, 255, 1);
+$glaucous: rgba(122, 137, 194, 1);
+$slate-grey: rgba(114, 120, 141, 1);
+$ebony: rgba(99, 107, 97, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+$gradient-right: linear-gradient(90deg, #e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+$gradient-bottom: linear-gradient(180deg, #e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+$gradient-left: linear-gradient(270deg, #e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+$gradient-top-right: linear-gradient(45deg, #e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+$gradient-bottom-right: linear-gradient(135deg, #e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+$gradient-top-left: linear-gradient(225deg, #e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+$gradient-bottom-left: linear-gradient(315deg, #e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+$gradient-radial: radial-gradient(#e3d7ffff, #afa2ffff, #7a89c2ff, #72788dff, #636b61ff);
+
+un archivo script.js para las funciones dentro de las paginas según se especificaron anteriormente, en la carpeta docs que igual se especifica en la captura que esten los archivos igual vistos en esta ultima, un README.md que especifique el proyecto de la manera mas corresta y profesional posible junto a este mismo promt y junto al archivo database.sql pque contenga el script para la base de datos que vamos a crear, en la parte de creación de la base de datos especifica la creación de un usuario con ´privilegios dedicado exclusivamente a este proyecto y a administrar los registros y tablas, queda estrictamente prohibdo que el usuario sea root.
+
+crea un archivo .env con las credencales refiriendome al usuario y contraseña para el inicio de sesion, y tambien un .gitignore para que no se suban esas credenciales al repositorio de git 
+
+el index.php tiene que estar afuera de todas las carpetas solo dentro de la carpeta de proyecto principal
+
+el css tiene que hacer que la información este extendida en a pantalla y no solo en el centro
+
+haz que se pueda acceder usando el comando php - S localhost:8000 en la terminal y despues en el navegador 
+
+tambien incluye un registro de usuarios con una extructura similar a la imagen anexada que te dimos que pueda introducir nuevos usuarios a la base de datos  
